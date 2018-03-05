@@ -19,19 +19,3 @@ class Robe < ApplicationRecord
   end
 
 end
-
-
-
-# require 'knn'
-# require 'json'
-# require "open-uri"
-#
-#
-# knn = KNN.new(data)
-#
-# result = knn.nearest_neighbours(data[22], 8)  # ([data], k's)
-#
-# neighbours_id = []
-# result.each do |res|
-#   neighbours_id << res[0]
-# end
