@@ -1,0 +1,27 @@
+.container-fluid.content
+  .row.content
+    .col
+      = link_to image_tag(@robe_chosen.url, size: "500x700"), robe_path(@robe_chosen)
+
+    .col
+      .row
+        .col
+          = link_to image_tag(@robe_neighbours[0].url, size: "180x250"), robe_path(@robe_neighbours[0])
+        .col
+          = link_to image_tag(@robe_neighbours[1].url, size: "180x250"), robe_path(@robe_neighbours[1])
+        .col
+          = link_to image_tag(@robe_neighbours[2].url, size: "180x250"), robe_path(@robe_neighbours[2])
+      .row
+        .col
+          = link_to image_tag(@robe_neighbours[3].url, size: "180x250"), robe_path(@robe_neighbours[3])
+        .col
+          = link_to image_tag(@robe_neighbours[4].url, size: "180x250"), robe_path(@robe_neighbours[4])
+        .col
+          = link_to image_tag(@robe_neighbours[5].url, size: "180x250"), robe_path(@robe_neighbours[5])
+      .row
+        .col
+          = link_to image_tag(@robe_neighbours[6].url, size: "180x250"), robe_path(@robe_neighbours[6])
+        .col
+          = link_to image_tag(@robe_neighbours[7].url, size: "180x250"), robe_path(@robe_neighbours[7])
+        .col
+          = link_to image_tag(@robe_neighbours[8].url, size: "180x250"), robe_path(@robe_neighbours[8])
