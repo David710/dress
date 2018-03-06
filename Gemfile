@@ -21,7 +21,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'haml-rails', '~> 0.9.0'
 
 # k nearest neighbours algorithm
-gem 'knn', '~> 0.0.1'
+# gem 'knn', '~> 0.0.1'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
