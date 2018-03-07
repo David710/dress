@@ -40,7 +40,8 @@ class RobesController < ApplicationController
     # fill a data array with all feature vectors from the Robe database
     data = []
     index_dress = []
-    Robe.find_each do |dress|
+    # Robe.find_each do |dress|
+    Robe.all.each do |dress|
       data << JSON.parse(dress.feature_vector)
       index_dress << dress.id
     end
