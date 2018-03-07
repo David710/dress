@@ -1,7 +1,8 @@
 class RobesController < ApplicationController
   def index
-
+    puts "1°°°°"
     data = get_all_vector_features[:data]
+    puts "4°°°°"
     index_dress = get_all_vector_features[:index_dress]
     @robe_chosen = Robe.find(rand(1..100)) # attention
     array_nearest_neighbours = @robe_chosen.nearest_neighbours(data, 9)
@@ -40,13 +41,14 @@ class RobesController < ApplicationController
     # fill a data array with all feature vectors from the Robe database
     data = []
     index_dress = []
-    # Robe.find_each do |dress|
-    Robe.all.each do |dress|
+    Robe.find_each do |dress|
       data << JSON.parse(dress.feature_vector)
       index_dress << dress.id
+      puts dress.id
     end
 
     return { data: data, index_dress: index_dress }
+    puts "3°°°°"
   end
 
 end
