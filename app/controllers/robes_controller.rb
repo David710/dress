@@ -44,11 +44,10 @@ class RobesController < ApplicationController
     Robe.find_each do |dress|
       data << JSON.parse(dress.feature_vector)
       index_dress << dress.id
-      puts dress.id
     end
-
-    return { data: data, index_dress: index_dress }
+    puts data[10][6]
     puts "3°°°°"
+    return { data: data, index_dress: index_dress }
   end
 
 end
