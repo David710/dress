@@ -42,7 +42,8 @@ class RobesController < ApplicationController
     data = []
     index_dress = []
     Robe.find_each do |dress|
-      data << JSON.parse(dress.feature_vector)
+      data << dress.feature_vector
+      # data << JSON.parse(dress.feature_vector)
       index_dress << dress.id
     end
     puts data[10][6]
